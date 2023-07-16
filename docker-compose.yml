@@ -6,7 +6,7 @@ services:
     image: mysql:8.0
     container_name: mysq_server
     volumes:
-      - db-backup:/var/lib/mysql
+      - ../db-backup:/var/lib/mysql
     restart: always
     ports:
       - "3306:3306"
